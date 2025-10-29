@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: mbs_bronze
+    schema: mbs_catalog.bronze        
+    tables:
+      - name: customer_raw
+        description: "Bảng thô chứa thông tin khách hàng."

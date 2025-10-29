@@ -1,0 +1,11 @@
+dbt_starrocks:
+  outputs:
+    dev:
+      host: kube-starrocks-fe-proxy.warehouse.svc.cluster.local
+      password: demo_mbs
+      port: 9030
+      schema: ods
+      type: starrocks
+      username: demo_mbs
+      threads: 4
+  target: dev
