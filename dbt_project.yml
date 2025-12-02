@@ -33,6 +33,8 @@ models:
   dbt_starrocks:
     staging:
       +materialized: table
-      +schema: ods
-      +distributed_by: ['id']
-      +partition_by: ['partition_date']
+      +schema: gold
+      +properties:
+        file_format: parquet
+
+
