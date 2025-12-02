@@ -1,8 +1,9 @@
 version: 2
 
 sources:
-  - name: mbs_bronze
-    schema: mbs_catalog.bronze        
+  - name: list_silver_tables
+    schema: silver
     tables:
-      - name: customer_raw
-        description: "Bảng thô chứa thông tin khách hàng."
+      - name: dim_t_list_branch_bank_adv_wdr
+
+
